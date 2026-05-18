@@ -1,0 +1,16 @@
+{
+  "name": "assignment-6",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "node scripts/dev-backend.js",
+    "dev:frontend": "node scripts/dev-frontend.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
