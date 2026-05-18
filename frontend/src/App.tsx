@@ -1,47 +1,44 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import type { Lesson } from './types';
+import LessonList from './LessonList';
+import LessonViewer from './LessonViewer';
 
 const apiUrl = import.meta.env.VITE_API_URL ?? 'http://localhost:8080';
 
-type HelloResponse = {
-  message: string;
-};
-
 export default function App() {
-  const [message, setMessage] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
+  const [lessons, setLessons] = useState<Lesson[]>([]);
+  const [selected, setSelected] = useState<Lesson | null>(null);
   const [error, setError] = useState('');
 
-  const handleClick = async () => {
-    setIsLoading(true);
-    setError('');
+  useEffect(() => {
+    fetch(`${apiUrl}/api/lessons`)
+      .then(r => {
+        if (!r.ok) throw new Error('Failed to load lessons');
+        return r.json() as Promise<Lesson[]>;
+      })
+      .then(setLessons)
+      .catch(() => setError('Could not reach the backend. Is Spring Boot running on port 8080?'));
+  }, []);
 
-    try {
-      const response = await fetch(`${apiUrl}/api/hello`);
+  if (error) {
+    return (
+      <main className="app">
+        <p className="error">{error}</p>
+      </main>
+    );
+  }
 
-      if (!response.ok) {
-        throw new Error('Request failed');
-      }
-
-      const data: HelloResponse = await response.json();
-      setMessage(data.message);
-    } catch (requestError) {
-      setMessage('');
-      setError('Could not reach the backend.');
-      console.error(requestError);
-    } finally {
-      setIsLoading(false);
-    }
-  };
+  if (selected) {
+    return (
+      <main className="app">
+        <LessonViewer lesson={selected} onBack={() => setSelected(null)} />
+      </main>
+    );
+  }
 
   return (
     <main className="app">
-      <div className="card">
-        <button type="button" onClick={handleClick} disabled={isLoading}>
-          {isLoading ? 'Loading...' : 'Call Backend'}
-        </button>
-        {message && <p>{message}</p>}
-        {error && <p className="error">{error}</p>}
-      </div>
+      <LessonList lessons={lessons} onSelect={setSelected} />
     </main>
   );
 }
