@@ -4,6 +4,11 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * In-memory data store for OOP lessons. All lessons are defined as a static
+ * constant — no database required. Add new {@link Lesson} entries here to
+ * extend the course content.
+ */
 @Service
 public class LessonService {
 

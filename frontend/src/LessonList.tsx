@@ -2,9 +2,11 @@ import type { Lesson } from './types';
 
 type Props = {
   lessons: Lesson[];
+  /** Called when the user clicks a lesson card. */
   onSelect: (lesson: Lesson) => void;
 };
 
+/** Displays a grid of lesson cards for the user to choose from. */
 export default function LessonList({ lessons, onSelect }: Props) {
   return (
     <div className="lesson-list">
