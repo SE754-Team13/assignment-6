@@ -5,9 +5,14 @@ import LessonViewer from './LessonViewer';
 
 const apiUrl = import.meta.env.VITE_API_URL ?? 'http://localhost:8080';
 
+/**
+ * Root component. Fetches all lessons from the backend on mount and manages
+ * which view is active: the lesson list or the step-by-step viewer.
+ */
 export default function App() {
   const [lessons, setLessons] = useState<Lesson[]>([]);
   const [selected, setSelected] = useState<Lesson | null>(null);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
   useEffect(() => {
@@ -16,17 +21,13 @@ export default function App() {
         if (!r.ok) throw new Error('Failed to load lessons');
         return r.json() as Promise<Lesson[]>;
       })
-      .then(setLessons)
-      .catch(() => setError('Could not reach the backend. Is Spring Boot running on port 8080?'));
+      .then(data => {
+        setLessons(data);
+        setError('');
+      })
+      .catch(() => setError('Could not reach the backend. Is Spring Boot running on port 8080?'))
+      .finally(() => setLoading(false));
   }, []);
-
-  if (error) {
-    return (
-      <main className="app">
-        <p className="error">{error}</p>
-      </main>
-    );
-  }
 
   if (selected) {
     return (
@@ -38,7 +39,13 @@ export default function App() {
 
   return (
     <main className="app">
-      <LessonList lessons={lessons} onSelect={setSelected} />
+      <LessonList
+        lessons={lessons}
+        loading={loading}
+        error={error}
+        onSelect={setSelected}
+      />
     </main>
   );
 }
+
