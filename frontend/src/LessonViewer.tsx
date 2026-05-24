@@ -3,9 +3,15 @@ import type { Lesson } from './types';
 
 type Props = {
   lesson: Lesson;
+  /** Called when the user navigates back to the lesson list. */
   onBack: () => void;
 };
 
+/**
+ * Steps through a lesson one step at a time. Shows a progress bar, the current
+ * step's content and optional code snippet, Previous/Next navigation, and a
+ * completion screen after the final step.
+ */
 export default function LessonViewer({ lesson, onBack }: Props) {
   const [stepIndex, setStepIndex] = useState(0);
   const completed = stepIndex >= lesson.steps.length;

@@ -5,6 +5,10 @@ import LessonViewer from './LessonViewer';
 
 const apiUrl = import.meta.env.VITE_API_URL ?? 'http://localhost:8080';
 
+/**
+ * Root component. Fetches all lessons from the backend on mount and manages
+ * which view is active: the lesson list or the step-by-step viewer.
+ */
 export default function App() {
   const [lessons, setLessons] = useState<Lesson[]>([]);
   const [selected, setSelected] = useState<Lesson | null>(null);
