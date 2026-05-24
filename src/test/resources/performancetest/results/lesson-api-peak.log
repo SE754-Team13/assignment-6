@@ -1,0 +1,150 @@
+2026-05-23 18:17:41,227 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-05-23 18:17:41,246 INFO o.a.j.JMeter: Loading user properties from: C:\Users\NewtonY\Documents\P4\assignment-5\tools\apache-jmeter-5.6.3\bin\user.properties
+2026-05-23 18:17:41,247 INFO o.a.j.JMeter: Loading system properties from: C:\Users\NewtonY\Documents\P4\assignment-5\tools\apache-jmeter-5.6.3\bin\system.properties
+2026-05-23 18:17:41,247 INFO o.a.j.JMeter: Setting JMeter property: users=30
+2026-05-23 18:17:41,247 INFO o.a.j.JMeter: Setting JMeter property: rampUp=10
+2026-05-23 18:17:41,248 INFO o.a.j.JMeter: Setting JMeter property: loops=10
+2026-05-23 18:17:41,248 INFO o.a.j.JMeter: Setting JMeter property: lessonId=2
+2026-05-23 18:17:41,248 INFO o.a.j.JMeter: Setting JMeter property: maxResponseTime=1000
+2026-05-23 18:17:41,248 INFO o.a.j.JMeter: Setting JMeter property: resultsFile=src/test/resources/performancetest/results/lesson-api-peak.csv
+2026-05-23 18:17:41,254 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-05-23 18:17:41,254 INFO o.a.j.JMeter: Version 5.6.3
+2026-05-23 18:17:41,254 INFO o.a.j.JMeter: java.version=17.0.16
+2026-05-23 18:17:41,255 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-05-23 18:17:41,255 INFO o.a.j.JMeter: os.name=Windows 11
+2026-05-23 18:17:41,255 INFO o.a.j.JMeter: os.arch=amd64
+2026-05-23 18:17:41,255 INFO o.a.j.JMeter: os.version=10.0
+2026-05-23 18:17:41,255 INFO o.a.j.JMeter: file.encoding=Cp1252
+2026-05-23 18:17:41,255 INFO o.a.j.JMeter: java.awt.headless=true
+2026-05-23 18:17:41,255 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-05-23 18:17:41,255 INFO o.a.j.JMeter: Available Processors =16
+2026-05-23 18:17:41,265 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-05-23 18:17:41,265 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-05-23 18:17:41,265 INFO o.a.j.JMeter: JMeterHome=C:\Users\NewtonY\Documents\P4\assignment-5\tools\apache-jmeter-5.6.3
+2026-05-23 18:17:41,266 INFO o.a.j.JMeter: user.dir  =C:\Users\NewtonY\Documents\P4\assignment-5
+2026-05-23 18:17:41,266 INFO o.a.j.JMeter: PWD       =C:\Users\NewtonY\Documents\P4\assignment-5
+2026-05-23 18:17:41,269 INFO o.a.j.JMeter: IP: 192.168.1.97 Name: DESKTOP-D5D2LL0 FullName: 192.168.1.97
+2026-05-23 18:17:41,285 INFO o.a.j.s.FileServer: Default base='C:\Users\NewtonY\Documents\P4\assignment-5'
+2026-05-23 18:17:41,286 INFO o.a.j.s.FileServer: Set new base='C:\Users\NewtonY\Documents\P4\assignment-5\.\src\test\resources\performancetest\plans'
+2026-05-23 18:17:41,451 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-05-23 18:17:41,482 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-05-23 18:17:41,486 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-05-23 18:17:41,491 INFO o.a.j.s.SaveService: Loading file: .\src\test\resources\performancetest\plans\lesson-api-performance-test.jmx
+2026-05-23 18:17:41,526 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2026-05-23 18:17:41,556 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-05-23 18:17:41,556 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-05-23 18:17:41,556 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-05-23 18:17:41,556 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-05-23 18:17:41,556 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-05-23 18:17:41,556 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-05-23 18:17:41,569 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-05-23 18:17:41,578 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-05-23 18:17:41,578 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-05-23 18:17:41,579 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-05-23 18:17:41,583 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-05-23 18:17:41,583 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-05-23 18:17:41,673 INFO o.a.j.JMeter: Running test (1779517061673)
+2026-05-23 18:17:41,684 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Lesson API Users
+2026-05-23 18:17:41,684 INFO o.a.j.e.StandardJMeterEngine: Starting 30 threads for group Lesson API Users.
+2026-05-23 18:17:41,684 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-05-23 18:17:41,684 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=30 ramp-up=10 delayedStart=false
+2026-05-23 18:17:41,690 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-1
+2026-05-23 18:17:41,702 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-05-23 18:17:41,702 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-05-23 18:17:41,706 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = DESKTOP-D5D2LL0
+2026-05-23 18:17:41,709 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-05-23 18:17:41,710 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-05-23 18:17:41,710 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-05-23 18:17:41,710 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-05-23 18:17:41,710 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-05-23 18:17:41,811 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-1
+2026-05-23 18:17:41,811 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-1
+2026-05-23 18:17:42,020 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-2
+2026-05-23 18:17:42,042 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-2
+2026-05-23 18:17:42,042 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-2
+2026-05-23 18:17:42,354 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-3
+2026-05-23 18:17:42,377 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-3
+2026-05-23 18:17:42,377 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-3
+2026-05-23 18:17:42,684 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-4
+2026-05-23 18:17:42,706 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-4
+2026-05-23 18:17:42,706 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-4
+2026-05-23 18:17:43,017 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-5
+2026-05-23 18:17:43,035 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-5
+2026-05-23 18:17:43,035 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-5
+2026-05-23 18:17:43,350 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-6
+2026-05-23 18:17:43,366 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-6
+2026-05-23 18:17:43,366 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-6
+2026-05-23 18:17:43,682 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-7
+2026-05-23 18:17:43,698 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-7
+2026-05-23 18:17:43,698 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-7
+2026-05-23 18:17:44,015 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-8
+2026-05-23 18:17:44,030 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-8
+2026-05-23 18:17:44,030 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-8
+2026-05-23 18:17:44,349 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-9
+2026-05-23 18:17:44,366 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-9
+2026-05-23 18:17:44,366 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-9
+2026-05-23 18:17:44,683 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-10
+2026-05-23 18:17:44,699 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-10
+2026-05-23 18:17:44,699 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-10
+2026-05-23 18:17:45,026 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-11
+2026-05-23 18:17:45,046 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-11
+2026-05-23 18:17:45,047 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-11
+2026-05-23 18:17:45,348 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-12
+2026-05-23 18:17:45,363 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-12
+2026-05-23 18:17:45,363 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-12
+2026-05-23 18:17:45,681 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-13
+2026-05-23 18:17:45,697 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-13
+2026-05-23 18:17:45,697 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-13
+2026-05-23 18:17:46,015 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-14
+2026-05-23 18:17:46,030 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-14
+2026-05-23 18:17:46,030 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-14
+2026-05-23 18:17:46,348 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-15
+2026-05-23 18:17:46,361 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-15
+2026-05-23 18:17:46,361 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-15
+2026-05-23 18:17:46,681 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-16
+2026-05-23 18:17:46,698 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-16
+2026-05-23 18:17:46,698 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-16
+2026-05-23 18:17:47,012 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-17
+2026-05-23 18:17:47,026 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-17
+2026-05-23 18:17:47,026 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-17
+2026-05-23 18:17:47,346 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-18
+2026-05-23 18:17:47,366 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-18
+2026-05-23 18:17:47,366 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-18
+2026-05-23 18:17:47,679 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-19
+2026-05-23 18:17:47,694 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-19
+2026-05-23 18:17:47,694 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-19
+2026-05-23 18:17:48,012 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-20
+2026-05-23 18:17:48,027 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-20
+2026-05-23 18:17:48,027 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-20
+2026-05-23 18:17:48,345 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-21
+2026-05-23 18:17:48,358 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-21
+2026-05-23 18:17:48,359 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-21
+2026-05-23 18:17:48,678 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-22
+2026-05-23 18:17:48,691 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-22
+2026-05-23 18:17:48,691 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-22
+2026-05-23 18:17:49,012 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-23
+2026-05-23 18:17:49,025 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-23
+2026-05-23 18:17:49,025 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-23
+2026-05-23 18:17:49,344 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-24
+2026-05-23 18:17:49,355 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-24
+2026-05-23 18:17:49,355 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-24
+2026-05-23 18:17:49,678 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-25
+2026-05-23 18:17:49,701 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-25
+2026-05-23 18:17:49,701 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-25
+2026-05-23 18:17:50,010 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-26
+2026-05-23 18:17:50,030 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-26
+2026-05-23 18:17:50,030 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-26
+2026-05-23 18:17:50,342 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-27
+2026-05-23 18:17:50,354 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-27
+2026-05-23 18:17:50,354 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-27
+2026-05-23 18:17:50,676 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-28
+2026-05-23 18:17:50,689 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-28
+2026-05-23 18:17:50,689 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-28
+2026-05-23 18:17:51,009 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-29
+2026-05-23 18:17:51,020 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-29
+2026-05-23 18:17:51,020 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-29
+2026-05-23 18:17:51,342 INFO o.a.j.t.JMeterThread: Thread started: Lesson API Users 1-30
+2026-05-23 18:17:51,355 INFO o.a.j.t.JMeterThread: Thread is done: Lesson API Users 1-30
+2026-05-23 18:17:51,355 INFO o.a.j.t.JMeterThread: Thread finished: Lesson API Users 1-30
+2026-05-23 18:17:51,355 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-05-23 18:17:51,356 INFO o.a.j.r.Summariser: summary =    600 in 00:00:10 =   62.0/s Avg:     0 Min:     0 Max:    27 Err:     0 (0.00%)
